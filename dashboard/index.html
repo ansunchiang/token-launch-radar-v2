@@ -1,15 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Token Radar: pre-token protocols ranked by implied value</title>
-<link rel="stylesheet" href="app.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Launch Ledger · Token launch radar</title>
+  <link rel="stylesheet" href="app.css">
+  <script defer src="../data.js"></script>
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
-<a class="skip" href="#board">Skip to the board</a>
-<main id="board" tabindex="-1" aria-busy="true"></main>
-<script src="../data.js"></script>
-<script src="app.js"></script>
+  <a class="skip-link" href="#main">Skip to radar</a>
+  <header class="mast">
+    <div class="shell mast-inner">
+      <a class="wordmark" href="#board"><span class="mark" aria-hidden="true"></span>Launch Ledger</a>
+      <nav aria-label="Radar views">
+        <a id="nav-board" href="#board">Radar</a>
+        <a id="nav-comps" href="#comps">Token trades</a>
+      </nav>
+      <span id="snapshot-stamp" class="stamp"></span>
+    </div>
+  </header>
+  <main class="shell" id="main" tabindex="-1" aria-busy="true">
+  </main>
+  <footer class="shell footer" id="footer"></footer>
 </body>
 </html>
